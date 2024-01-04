@@ -1,0 +1,62 @@
+.ProductCard {
+  @media only screen and (min-width: $laptop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+  }
+  .img {
+    .largeImg {
+      aspect-ratio: 1/1;
+      border-radius: 5px;
+      border: 2px solid white;
+      outline: 2px solid black;
+    }
+    .smallImgList {
+      display: flex;
+      .smallImg {
+        height: 50px;
+        width: 50px;
+        margin-top: 10px;
+        margin-right: 10px;
+        overflow: hidden;
+        border: 2px solid white;
+        border-radius: 5px;
+        outline: 2px solid black;
+        cursor: pointer;
+      }
+    }
+  }
+  .content {
+    margin-top: 2em;
+    padding-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+    border-top: 1px solid black;
+    .category {
+      color: $red;
+    }
+    .name {
+      font-size: 1rem;
+      font-weight: normal;
+    }
+    .qty {
+      .stock {
+        font-weight: 700;
+        font-size: 0.9rem;
+        color: $red;
+      }
+      .inStock {
+        color: green;
+      }
+      button {
+        padding: calc(0.2em + 1px) 0.5em;
+        margin-left: 1em;
+        background: linear-gradient(to right top, $redLight, $orangeLight);
+      }
+    }
+    .description {
+      margin-top: 1em;
+    }
+  }
+}

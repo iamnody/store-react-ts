@@ -1,0 +1,21 @@
+/* Footer.css */
+.footer {
+  margin-top: 2em;
+  padding: 1.5em;
+  background-color: #333;
+  color: white;
+  @media only screen and (min-width: $laptop) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .boxA {
+    margin-top: 0.5em;
+    @media only screen and (min-width: $laptop) {
+      margin-top: 0;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}

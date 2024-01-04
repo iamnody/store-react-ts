@@ -1,0 +1,55 @@
+.PlaceOrder {
+  hr {
+    margin: 1em 0;
+  }
+  h1 {
+    font-size: 1.5rem;
+    margin: 1em 0;
+  }
+  h3 {
+    margin-bottom: 0.25em;
+  }
+  .orderBtn {
+    background: linear-gradient(to right top, $redLight, $orangeLight);
+  }
+  .summary {
+    width: 275px;
+    p {
+      //   margin-top: 0.25em;
+      display: flex;
+      justify-content: space-between;
+      span {
+        // margin-left: ;
+        display: inline-block;
+      }
+    }
+  }
+  .address {
+    button {
+      margin-top: 0.25em;
+    }
+  }
+  .payment {
+    button {
+      margin-top: 0.25em;
+    }
+  }
+  .itemList {
+    .card {
+      display: flex;
+      gap: 0.5em;
+    }
+    img {
+      width: 75px;
+      height: 75px;
+      border: 1px solid white;
+      outline: 1px solid black;
+      border-radius: 5px;
+    }
+    .content {
+      .price {
+        margin-top: 0.5em;
+      }
+    }
+  }
+}

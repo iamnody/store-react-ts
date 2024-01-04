@@ -1,0 +1,8 @@
+.Home {
+  .landing {
+    @media only screen and (min-width: $laptop) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

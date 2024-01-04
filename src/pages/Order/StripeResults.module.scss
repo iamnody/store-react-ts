@@ -1,0 +1,19 @@
+.StripeResults {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  .img {
+    max-width: 80px;
+    margin-top: 80px;
+  }
+  .resultText {
+    font-weight: 700;
+  }
+  @media only screen and (min-width: $tablet) {
+    .img {
+      max-width: 150px;
+    }
+  }
+}

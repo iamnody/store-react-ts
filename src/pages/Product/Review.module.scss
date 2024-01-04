@@ -1,0 +1,75 @@
+.Review {
+  padding-top: 1.5em;
+  margin: 1.5em 0 300px;
+  border-top: 1px solid black;
+
+  @mixin reviewCard {
+    position: relative;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+    border: 1px solid black;
+    border-radius: 5px;
+    .delete {
+      position: absolute;
+      right: 0.5em;
+      // color: $red;
+      background: linear-gradient(to right top, $redLight, $orangeLight);
+    }
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+      svg {
+        color: $gray;
+        font-size: 1.25rem;
+      }
+    }
+    .time {
+      font-size: 0.8rem;
+    }
+    .comment {
+      word-wrap: break-word;
+      line-height: 1.5;
+      font-size: 0.9rem;
+    }
+  }
+
+  .writeReview {
+    .reviewCard {
+      @include reviewCard;
+      .user {
+        font-weight: 700;
+      }
+    }
+    .title {
+      font-weight: 700;
+    }
+    form {
+      margin-top: 0.5em;
+      display: grid;
+      gap: 0.5em;
+    }
+    a {
+      color: $blue;
+      text-decoration: underline;
+    }
+  }
+
+  .customerReviews {
+    margin-top: 1.5em;
+    .title {
+      font-weight: 700;
+    }
+    .reviewList {
+      margin-top: 0.5em;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      .reviewCard {
+        @include reviewCard;
+      }
+    }
+  }
+}

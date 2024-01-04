@@ -1,0 +1,57 @@
+@import '../../styles/variables.scss';
+
+.Pagination {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  li {
+    a {
+      // padding: 0.3em 0.5em;
+      padding: 0.5em 0.75em;
+      border: 1px solid black;
+      border-radius: 5px;
+      font-size: 0.8rem;
+      // font-size: 0.7rem;
+      &:hover {
+        background-color: #eee;
+        outline: none;
+      }
+      &:focus {
+        background-color: #eee;
+        outline: none;
+      }
+    }
+    &.active a {
+      background: linear-gradient(to right top, $redLight, $orangeLight);
+      color: white;
+      font-weight: bold;
+      border-color: $red;
+    }
+    &.disabled a {
+      border: none;
+      background-color: $grayLight;
+      color: $gray;
+      font-weight: 400 !important;
+      // text-decoration: line-through;
+      // text-decoration-thickness: 1.25px;
+      cursor: not-allowed;
+      &:hover {
+        transform: scale(1);
+        background-color: $grayLight;
+      }
+    }
+  }
+  .previous,
+  .next {
+    // display: none;
+    a {
+      background-color: #f8f9fa;
+      &:hover,
+      &:focus {
+        background-color: #e2e6ea;
+      }
+    }
+  }
+}

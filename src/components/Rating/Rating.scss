@@ -1,0 +1,11 @@
+.Rating {
+  display: flex;
+  span {
+    display: block;
+    display: flex;
+    align-items: center;
+  }
+  &__text {
+    margin-left: 0.25rem;
+  }
+}

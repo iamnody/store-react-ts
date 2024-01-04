@@ -1,0 +1,30 @@
+$tablet: 425px;
+$laptop: 768px;
+$desktop: 1024px;
+$max-width: 1200px;
+
+$red: #eb1916;
+$redLight: #ff5552;
+$orange: #ff4800;
+$orangeLight: rgb(255, 173, 49);
+$green: #0cbc03;
+$greenLight: #65fc5d;
+$blue: #152cff;
+$blueLight: #7fd6ff;
+$gray: #999;
+$grayLight: #eee;
+
+@mixin background-linear-gradient {
+  background: linear-gradient(to right top, $redLight, $orangeLight);
+}
+
+:global {
+  .globalMaxWidth {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0 0.5em;
+  }
+  .globalMinHeight {
+    min-height: 75vh;
+  }
+}

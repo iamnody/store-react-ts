@@ -1,0 +1,67 @@
+.Cart {
+  h1 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  .itemList {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    margin: 1em 0;
+    padding: 1em 0;
+    display: flex;
+    gap: 1em;
+    border-bottom: 1px solid black;
+  }
+  img {
+    width: 100px;
+    height: 100px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    .name {
+      font-weight: 700;
+    }
+    .qtyControlWapper {
+      display: flex;
+      align-items: center;
+      gap: 2em;
+      .qtyControl {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        border: 1px solid black;
+        border-radius: 50px;
+        overflow: hidden;
+        svg {
+          font-size: 2rem;
+          padding: 0.2em;
+          cursor: pointer;
+        }
+      }
+      .delete {
+        cursor: pointer;
+      }
+    }
+  }
+  .subtotal {
+    text-align: right;
+    h2 {
+      span {
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+    }
+    button {
+      margin-top: 1em;
+      background: linear-gradient(to right top, $redLight, $orangeLight);
+      padding: 0.5em 1em;
+      // font-weight: 700;
+    }
+  }
+}
